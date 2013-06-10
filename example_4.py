@@ -1,3 +1,5 @@
+# FIXED
+
 # We want the following function to median-filter the arrays (as in Problem Set
 # 4) but it looks like there is an issue in the plot - the red curve should
 # follow the blue points better. What is happening?
@@ -8,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 def median_filter(x, y, width):
-    y_new = y
+    y_new = np.zeros(y.shape)
     for i in range(len(x)):
         y_new[i] = np.median(y[(x > x[i] - width * 0.5) &
                                (x < x[i] + width * 0.5)])
