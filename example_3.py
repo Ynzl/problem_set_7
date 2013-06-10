@@ -1,3 +1,5 @@
+# FIXED
+
 # We want the following to compute the integral of the function
 #
 # y = 3. * x ** 2 + 2. * x + 1.
@@ -17,4 +19,4 @@ n = 1000
 x = np.linspace(0., 10., n)
 y = 3. * x ** 2 + 2. * x + 1.
 
-print "Integral is:", trapz(x, y)
+print "Integral is:", trapz(y, x)
