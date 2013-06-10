@@ -1,3 +1,5 @@
+# FIXED
+
 # We want the following function to return a sorted array of n random numbers
 # between 0 and 1. But it doesn't currently:
 #
@@ -14,6 +16,6 @@ import numpy as np
 
 def sorted_random_array(n):
     x = np.random.random(n)
-    return x.sort()
+    return np.sort(x)
 
 print("Sorted random values: ", sorted_random_array(10))
